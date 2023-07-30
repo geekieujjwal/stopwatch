@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: white;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header,
+main,
+.start-stop,
+.reset-btn {
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  margin-bottom: 4rem;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 84;
+  font-size: 50px;
+}
+
+h1 {
+  font-size: xxx-large;
+  margin-left: 1rem;
+}
+
+#hour,
+#minute,
+#second {
+  border: 1px solid white;
+  padding: 2rem 4rem;
+  font-size: xx-large;
+  border-radius: 1rem;
+  margin: 0 1rem 3.5rem 0;
+}
+
+button {
+  cursor: pointer;
+  padding: 2rem 3rem;
+  border-radius: 2rem;
+}
+
+.start-stop {
+  gap: 10rem;
+  margin-bottom: 1rem;
+}
+
+.start:hover {
+  background-color: rgb(83, 186, 83);
+  color: white;
+}
+
+.stop:hover {
+  background-color: red;
+  color: white;
+}
+
+.reset:hover {
+  background-color: rgb(204, 206, 62);
+  color: white;
+}
+
+@media screen and (max-width: 375px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  #hour,
+  #minute,
+  #second {
+    padding: 1rem 2rem;
+  }
+  .start-stop {
+    gap: 5rem;
+  }
+}
