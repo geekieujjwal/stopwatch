@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background-color: black;
+  background-color: rgb(161, 154, 154);
   color: white;
   height: 100vh;
   display: flex;
